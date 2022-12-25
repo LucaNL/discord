@@ -44265,7 +44265,7 @@
           const l = r.id.substring(0, 6)
           const c =
             r.message.length > o ? r.message.substring(0, o) + '...' : r.message
-          i += `[\`${l}\`](${r.url}) — ${c}\n`
+          i += `${c}\n`
         }
         return i
       }
