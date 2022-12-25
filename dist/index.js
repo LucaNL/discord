@@ -44235,7 +44235,7 @@
         const l = r[0]
         console.log(l)
         return new s()
-          .setColor(-44076)
+          .setColor(16733140)
           .setAuthor({
             name: `${l.author.username}`,
             iconURL: `https://github.com/${l.author.username}.png?size=32`,
