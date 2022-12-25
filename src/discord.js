@@ -53,7 +53,7 @@ function createEmbed(repo, branch, url, commits, size) {
       text: `Maarsseveen - Development`,
       iconURL:
         'https://cdn.discordapp.com/attachments/818091538289524776/848275693744816158/Maarsseveenlogo.png',
-    }).set
+    })
 }
 
 function getChangeLog(commits, size) {
