@@ -44258,7 +44258,7 @@
         let i = ''
         for (const s in e) {
           if (s > 7) {
-            i += `+ ${t - s} more...\n`
+            i += `+ ${t - s} meer...\n`
             break
           }
           const r = e[s]
