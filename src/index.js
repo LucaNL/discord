@@ -1,8 +1,6 @@
 const core = require('@actions/core')
 const github = require('@actions/github')
 
-const webhook = require('../src/discord.js')
-
 async function run() {
   const payload = github.context.payload
   const repository = payload.repository.full_name
@@ -18,14 +16,6 @@ async function run() {
     console.log(`No commits, skipping...`)
     return
   }
-
-  const id = core.getInput('id')
-  const token = core.getInput('token')
-  const threadId = core.getInput('threadId')
-
-  webhook
-    .send(id, token, repository, branch, payload.compare, commits, size, threadId)
-    .catch((err) => core.setFailed(err.message))
 }
 
 try {
