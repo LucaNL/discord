@@ -44213,7 +44213,7 @@
     },
     85004: (e, t, i) => {
       const { MessageEmbed: s, WebhookClient: r } = i(85973)
-      const o = 40
+      const o = 100
       e.exports.send = (e, t, i, s, o, l, c) =>
         new Promise((u, m) => {
           let g
@@ -44239,12 +44239,13 @@
           .setAuthor({
             name: `${l.author.username}`,
             iconURL: `https://github.com/${l.author.username}.png?size=32`,
+            url: `https://github.com/${l.author.username}`,
           })
           .setTitle(
             `${o} ${o === 1 ? 'update is' : 'updates zijn'} toegevoegd!`
           )
           .setDescription(`${getChangeLog(r, o)}`)
-          .setTimestamp(Date.parse(l.timestamp))
+          .setTimestamp()
           .setThumbnail(
             'https://cdn.discordapp.com/attachments/818091538289524776/848275693744816158/Maarsseveenlogo.png'
           )
